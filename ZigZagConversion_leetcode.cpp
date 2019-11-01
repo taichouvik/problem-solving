@@ -16,7 +16,7 @@ at level 0:   the offset between indices is 4 (=nr in the code)
 at level 1: the offset starts from nr-2 (=var_offset in the code)
             the offset alternates btw var_offset & nr-var_offset
               nr-2 = 2
-              so the indices are:   1 , 3= (1+2) or (1+var_offset) , 5= (3+2) or (1+(nr-var_offset))
+              so the indices are:   1 , 3= (1+2) or (1+var_offset) , 5= (3+2) or (3+(nr-var_offset))
 at level 2: (special case for last level) 
             the offset again becomes 'nr'
             so the indices are:     2, 6= (2+nr) or (2+4)
