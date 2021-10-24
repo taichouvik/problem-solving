@@ -17,6 +17,7 @@ public class LearnConstructor {
 
     public static void main(String[] s) {
         Ex ex = new Ex();
+        System.out.println(ex);
     }
 
 }

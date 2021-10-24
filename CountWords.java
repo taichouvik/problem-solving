@@ -1,3 +1,4 @@
+
 /* Count Words
 
 For a given input string(str), find and return the total number of words present in it.
@@ -33,10 +34,11 @@ class CountWords {
     }
 
     public static void main(String args[]) {
-        Scanner s = new Scanner(System.in);
-        String in = s.nextLine();
+        try (Scanner s = new Scanner(System.in)) {
+            String in = s.nextLine();
 
-        System.out.println(countWords(in));
+            System.out.println(countWords(in));
+        }
     }
 
 }
